@@ -405,10 +405,12 @@
       }
     }
     rotateLeft() {
-      this.rotateDeg -= 90
+      // this.rotateDeg -= 90
+      this.$emit('rotate-left')
     }
     rotateRight() {
-      this.rotateDeg += 90
+      // this.rotateDeg += 90
+      this.$emit('rotate-right')
     }
     resize() {
       this.scale = 1
